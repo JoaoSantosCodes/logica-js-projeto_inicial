@@ -17,5 +17,9 @@ if (numeroSecreto == chute) {
     alert(`sso aí! Você descobriu o número secreto ${numeroSecreto}`);
 } else {
     // Se a condição for falsa, exibe um alerta informando que houve um erro.
-    alert('ERROOOO!');
+    if (chute > numeroSecreto) {
+        alert (`O número secreto é menor que ${chute}`);
+    }else {
+        alert(`O número secreto é maior que ${chute}`);
+    }
 }
