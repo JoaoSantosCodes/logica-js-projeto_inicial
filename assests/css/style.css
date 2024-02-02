@@ -17,7 +17,7 @@ body {
 
 /* Adiciona uma imagem de fundo à página */
 body::before {
-    background-image: url("img/code.png");
+    background-image: url("/assests/img/code.png");
     background-repeat: no-repeat;
     background-position: right;
     content: "";

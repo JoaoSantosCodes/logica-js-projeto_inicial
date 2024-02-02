@@ -8,18 +8,28 @@ let numeroSecreto = 2;
 console.log(numeroSecreto);
 
 // Usa o prompt para solicitar ao usuário que escolha um número entre 1 e 10 e armazena o valor na variável chute.
-let chute = prompt('Escolha um número entre 1 e 10');
+let chute;
+let tentativas = 1; // Inicializa a contagem de tentativas.
 
-// Condição: verifica se o valor armazenado em chute é igual ao valor armazenado em numeroSecreto.
-if (numeroSecreto == chute) {
-    // Se a condição for verdadeira, exibe um alerta informando que o usuário descobriu o número secreto.
+// Enquanto o chute não for igual ao número secreto, continua pedindo ao usuário que faça um chute.
+while (chute != numeroSecreto) {
+    chute = prompt('Escolha um número entre 1 e 10');
 
-    alert(`sso aí! Você descobriu o número secreto ${numeroSecreto}`);
-} else {
-    // Se a condição for falsa, exibe um alerta informando que houve um erro.
-    if (chute > numeroSecreto) {
-        alert (`O número secreto é menor que ${chute}`);
-    }else {
-        alert(`O número secreto é maior que ${chute}`);
+    // Converte o valor do chute para um número inteiro.
+    chute = parseInt(chute);
+
+    // Verifica se o valor armazenado em chute é igual ao valor armazenado em numeroSecreto.
+    if (numeroSecreto == chute) {
+        // Se a condição for verdadeira, exibe um alerta informando que o usuário descobriu o número secreto e o número de tentativas.
+        alert(`Isso aí! Você descobriu o número secreto ${numeroSecreto} com ${tentativas} tentativas.`);
+    } else {
+        // Se a condição for falsa, exibe um alerta informando se o número secreto é maior ou menor.
+        if (chute > numeroSecreto) {
+            alert(`O número secreto é menor que ${chute}`);
+        } else {
+            alert(`O número secreto é maior que ${chute}`);
+        }
+        // Incrementa o número de tentativas.
+        tentativas++;
     }
 }
