@@ -1,19 +1,21 @@
+/* Define um estilo base para todos os elementos HTML */
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    color: white;
+    box-sizing: border-box; /* Garante que a largura e a altura incluem a borda e o preenchimento */
+    margin: 0; /* Remove margens padrão */
+    padding: 0; /* Remove preenchimentos padrão */
+    color: white; /* Define a cor do texto como branco para todos os elementos */
 }
 
+/* Estilos para o corpo da página */
 body {
-    background: linear-gradient(#1354A5 0%, #041832 33.33%, #041832 66.67%, #01080E 100%);
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    background: linear-gradient(#1354A5 0%, #041832 33.33%, #041832 66.67%, #01080E 100%); /* Fundo com gradiente linear */
+    height: 100vh; /* 100% da altura da viewport */
+    display: flex; /* Usa o modelo de layout flexível */
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
 }
 
-
+/* Adiciona uma imagem de fundo à página */
 body::before {
     background-image: url("img/code.png");
     background-repeat: no-repeat;
@@ -23,35 +25,39 @@ body::before {
     position: absolute;
     width: 100%;
     height: 100%;
-    opacity: 0.4;
+    opacity: 0.4; /* Opacidade da imagem de fundo */
 }
 
+/* Estilos para o contêiner principal */
 .container {
-    width: 1200px;
-    height: 600px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border-radius: 24px;
-    border: 1px solid #1875E8;
-    box-shadow: 4px 4px 20px 0px rgba(1, 8, 14, 0.15);
-    background-image: url("img/Ruido.png");
+    width: 1200px; /* Largura fixa */
+    height: 600px; /* Altura fixa */
+    display: flex; /* Usa o modelo de layout flexível */
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: space-between; /* Distribui o espaço entre os filhos */
+    border-radius: 24px; /* Borda arredondada */
+    border: 1px solid #1875E8; /* Borda sólida */
+    box-shadow: 4px 4px 20px 0px rgba(1, 8, 14, 0.15); /* Sombra */
+    background-image: url("img/Ruido.png"); /* Imagem de fundo com ruído */
     background-size: 100% 100%;
     position: relative;
 }
 
+/* Estilos para o conteúdo dentro do contêiner */
 .container__conteudo {
-    display: flex;
-    align-items: center;
-    position: absolute;
-    bottom: 0;
+    display: flex; /* Usa o modelo de layout flexível */
+    align-items: center; /* Centraliza verticalmente */
+    position: absolute; /* Posicionamento absoluto */
+    bottom: 0; /* Alinha na parte inferior do contêiner */
 }
 
+/* Estilos para o bloco de informações dentro do contêiner */
 .container__informacoes {
-    flex: 1;
-    padding: 20px;
+    flex: 1; /* Cresce para ocupar o espaço disponível */
+    padding: 20px; /* Preenchimento interno */
 }
 
+/* Estilos para o botão dentro do contêiner */
 .container__botao {
     border-radius: 16px;
     background: #1875E8;
@@ -63,25 +69,28 @@ body::before {
     margin-top: 16px;
 }
 
+/* Estilos para o bloco de texto dentro do contêiner */
 .container__texto {
     margin: 16px 0 16px 0;
 }
 
+/* Estilos para o texto azul dentro do contêiner */
 .container__texto-azul {
     color: #1875E8;
 }
 
+/* Estilos para o título h1 */
 h1 {
     font-family: 'Chakra Petch', sans-serif;
     font-size: 72px;
 }
 
-h2,
-p,
-button {
+/* Estilos para títulos h2, parágrafos e botões */
+h2, p, button {
     font-family: 'Inter', sans-serif;
 }
 
+/* Estilos para subtítulos h2 */
 h2 {
     font-size: 32px;
     font-weight: 400;

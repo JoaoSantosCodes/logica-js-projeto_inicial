@@ -2,30 +2,50 @@
 <html lang="en">
 
 <head>
+    <!-- Define o conjunto de caracteres e a escala inicial da viewport -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Links para importar fontes do Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&family=Inter:wght@400;700&display=swap"
         rel="stylesheet">
+
+    <!-- Link para o arquivo de estilo local chamado "style.css" -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- Título da página -->
     <title>JS Game</title>
 </head>
 
 <body>
+    <!-- Conteúdo principal da página -->
     <div class="container">
         <div class="container__conteudo">
+            <!-- Imagem do robô mergulhador -->
             <img src="./img/robot.png" alt="robô mergulhador" class="container__imagem-robo" />
+
+            <!-- Container para informações sobre o jogo -->
             <div class="container__informacoes">
+                <!-- Ícone de um troféu -->
                 <img src="./img/trophy.png" alt="ícone de um troféu" />
-                 <div class="container__texto">
+
+                <!-- Container para texto informativo -->
+                <div class="container__texto">
+                    <!-- Título principal com destaque azul -->
                     <h1>Você <span class="container__texto-azul">acertou!</span></h1>
+
+                    <!-- Subtítulo informando que o usuário descobriu o número secreto -->
                     <h2>Você descobriu o número secreto!</h2>
                 </div>
             </div>
         </div>
     </div>
+
+    <!-- Link para o arquivo de script JavaScript chamado "app.js" com a opção "defer" -->
     <script src="app.js" defer></script>
 </body>
 
 </html>
+
